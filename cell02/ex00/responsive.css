@@ -1,0 +1,21 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    height: 100px;
+    width: 25%;
+    text-align: left;
+    font-size: 16px;
+    color: white;
+    border: 1px solid black;
+}
+
+td:first-child{
+    background-color: red;
+}
+
+td:last-child{
+    background-color: blue;
+}
