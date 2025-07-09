@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .profile-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            overflow: hidden;
+        }
+
+        .card-title {
+            background-color: #f8f8f8;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .profile-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .profile-table td {
+            text-align: center;
+            padding: 10px;
+            border: none;
+        }
+
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #ddd;
+        }
+
+        .login-name {
+            font-size: 32px;
+            font-weight: bold;
+            color: #333;
+            margin: 15px 0 5px 0;
+        }
+
+        .description {
+            font-size: 16px;
+            color: #666;
+            margin: 5px 0 15px 0;
+        }
+
+        .location {
+            font-size: 14px;
+            color: #999;
+            margin: 10px 0 20px 0;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .social-icon {
+            font-size: 24px;
+            cursor: pointer;
+            transition: opacity 0.3s;
+        }
+
+        .social-icon:hover {
+            opacity: 0.7;
+        }
+
+        .contact-button {
+            width: 100%;
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <div class="card-title">User Profile Card</div>
+       
+        <div class="card-content">
+            <table class="profile-table">
+                <tr>
+                    <td>
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgdmlld0JveD0iMCAwIDE1MCAxNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxNTAiIGhlaWdodD0iMTUwIiByeD0iNzUiIGZpbGw9IiNjNGE0NzQiLz4KPGVsbGlwc2UgY3g9IjU1IiBjeT0iNDUiIHJ4PSI4IiByeT0iMTIiIGZpbGw9IiMyMjIiLz4KPGVsbGlwc2UgY3g9Ijk1IiBjeT0iNDUiIHJ4PSI4IiByeT0iMTIiIGZpbGw9IiMyMjIiLz4KPGVsbGlwc2UgY3g9IjQwIiBjeT0iMzUiIHJ4PSIxNSIgcnk9IjIwIiBmaWxsPSIjYzRhNDc0Ii8+CjxlbGxpcHNlIGN4PSIxMTAiIGN5PSIzNSIgcng9IjE1IiByeT0iMjAiIGZpbGw9IiNjNGE0NzQiLz4KPGVsbGlwc2UgY3g9Ijc1IiBjeT0iNzAiIHJ4PSI4IiByeT0iMTAiIGZpbGw9IiMzMzMiLz4KPHBhdGggZD0iTTUwIDkwIEM1MCA5MCA2MCA5NSA3NSA5NSBDOTAgOTUgMTAwIDkwIDEwMCA5MCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz4KPC9zdmc+" alt="Profile Picture" class="profile-picture">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="login-name">Wil 42</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="description">Level 25, The answer</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="location">42Paris</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="social-icons">
+                            <span class="social-icon">🌐</span>
+                            <span class="social-icon">🐦</span>
+                            <span class="social-icon">💼</span>
+                            <span class="social-icon">📘</span>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

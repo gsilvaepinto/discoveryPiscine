@@ -1,0 +1,36 @@
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+.parallax{
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.parallax1{
+    background-image: url(https://img.freepik.com/free-photo/abstract-flowing-neon-wave-background_53876-101942.jpg?semt=ais_hybrid&w=740);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax2{
+    background-image: url(https://t4.ftcdn.net/jpg/10/06/86/39/360_F_1006863947_cknEH6RCpKxB1wkK5gSkh2IjXJ5oIHJR.jpg);
+}
+
+.parallax1 p,
+.center p{
+    color: white;
+}
+
+.center{
+    height: 25vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

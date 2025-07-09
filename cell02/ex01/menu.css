@@ -1,0 +1,34 @@
+label{
+    display: block;
+    width: 30px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+label span{
+    display: block;
+    background-color: black;
+    height: 3px;
+    margin: 5px 0;
+}
+
+#menu-toggle{
+    display: none;
+}
+
+.menu a{
+    display: block;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.menu{
+    width: 150px;
+    background-color: bisque;
+    padding: 10px;
+    display: none;
+}
+
+#menu-toggle:checked + label + .menu{
+    display: block;
+}

@@ -1,0 +1,87 @@
+body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .profile-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            overflow: hidden;
+        }
+
+        .card-title {
+            background-color: #f8f8f8;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .profile-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .profile-table td {
+            text-align: center;
+            padding: 10px;
+            border: none;
+        }
+
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #ddd;
+        }
+
+        .login-name {
+            font-size: 32px;
+            font-weight: bold;
+            color: #333;
+            margin: 15px 0 5px 0;
+        }
+
+        .description {
+            font-size: 16px;
+            color: #666;
+            margin: 5px 0 15px 0;
+        }
+
+        .location {
+            font-size: 14px;
+            color: #999;
+            margin: 10px 0 20px 0;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .social-icon {
+            font-size: 24px;
+            cursor: pointer;
+            transition: opacity 0.3s;
+        }
+
+        .social-icon:hover {
+            opacity: 0.7;
+        }
