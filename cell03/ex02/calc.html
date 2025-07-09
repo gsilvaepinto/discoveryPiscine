@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="firstNumber" value="" placeholder="First Number">
+    <select name="operators" id="operators">
+        <option value="sum">+</option>
+        <option value="minus">-</option>
+        <option value="multiply">*</option>
+        <option value="divide">/</option>
+        <option value="module">%</option>
+    </select>
+    <input type="text" name="secondNumber" value="" placeholder="Second Number">
+    <button type="submit">Try me!</button>
+    <script>
+        function makeCalc(){
+            const firstNumber = Number(document.querySelector('input[name="firstNumber"]').value);
+            const secondNumber = Number(document.querySelector('input[name="secondNumber"]').value);
+            const operator = document.querySelector('#operators').value;
+
+            if (firstNumber < 0 || secondNumber < 0){
+                alert('Error :(');
+                return;
+            }
+
+            let result;
+            switch(operator){
+                case 'sum':
+                    result = firstNumber + secondNumber;
+                    break;
+                case 'minus':
+                    result = firstNumber - secondNumber;
+                    break;
+                case 'multiply':
+                    result = firstNumber * secondNumber;
+                    break;
+                case 'divide':
+                    if (secondNumber !== 0){
+                        result = firstNumber / secondNumber;
+                    } else {
+                        alert("It's over 9000!");
+                        console.log("It's over 9000!");
+                    }
+                    break;
+                case 'module':
+                    if (secondNumber !== 0){
+                        result = firstNumber % secondNumber;
+                    } else {
+                        alert("It's over 9000!");
+                        console.log("It's over 9000!");
+                    }
+                    break;
+                }
+                
+            alert(`${result}`);
+            console.log(result);
+        }
+
+        const submitBtn = document.querySelector('button');
+        submitBtn.addEventListener('click', makeCalc);
+        
+        /* setTimeout(() => {
+            alert('Please, use me...')
+        }, 30000) */
+    </script>
+</body>
+</html>
