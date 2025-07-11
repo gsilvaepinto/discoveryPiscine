@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
 </head>
 <body>
     <input type="text" name="firstNumber" value="" placeholder="First Number">
@@ -17,10 +18,11 @@
     <input type="text" name="secondNumber" value="" placeholder="Second Number">
     <button type="submit">Try me!</button>
     <script>
-        function makeCalc(){
-            const firstNumber = Number(document.querySelector('input[name="firstNumber"]').value);
-            const secondNumber = Number(document.querySelector('input[name="secondNumber"]').value);
-            const operator = document.querySelector('#operators').value;
+        $(document).ready(function(){
+            $('button').on('click', function(){
+                const firstNumber = Number($('input[name="firstNumber"]').val());
+                const secondNumber = Number($('input[name="secondNumber"]').val());
+                const operator = $('#operators').val();
 
             if (firstNumber < 0 || secondNumber < 0){
                 alert('Error :(');
@@ -58,10 +60,8 @@
                 
             alert(`${result}`);
             console.log(result);
-        }
-
-        const submitBtn = document.querySelector('button');
-        submitBtn.addEventListener('click', makeCalc);
+            })
+        })
         
         setTimeout(() => {
             alert('Please, use me...')
